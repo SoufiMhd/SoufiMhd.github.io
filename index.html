@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="digitile_theme_2">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>digitile_theme_2</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeaqShlQze6rtJmFQLuxytX6Fv1CvgLNU&callback=Function.prototype"></script>
+  <meta
+          name="google-signin-client_id"
+          content="137799346079-d745o0hl4pk5va9she9acdmkeikqb5f4.apps.googleusercontent.com"
+  />
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = "3613586120";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+  <script>
+    function setCookie(name, value, expires) {
+      // Create a cookie with the specified name, value, and expiration date
+      document.cookie = name + "=" + value + "; expires=" + expires + "; path=/";
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <script src="main.dart.js" type="application/javascript"></script>
+
+<!--  <script type="module">-->
+<!--  // Import the functions you need from the SDKs you need-->
+<!--  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";-->
+<!--  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";-->
+<!--  // TODO: Add SDKs for Firebase products that you want to use-->
+<!--  // https://firebase.google.com/docs/web/setup#available-libraries-->
+
+<!--  // Your web app's Firebase configuration-->
+<!--  // For Firebase JS SDK v7.20.0 and later, measurementId is optional-->
+<!--  const firebaseConfig = {-->
+<!--    apiKey: "AIzaSyBBFgdmcpxy-E0Wb0aU2R6sj0yqKIoSls0",-->
+<!--    authDomain: "digitilez-fcf38.firebaseapp.com",-->
+<!--    databaseURL: "https://digitilez-fcf38-default-rtdb.asia-southeast1.firebasedatabase.app",-->
+<!--    projectId: "digitilez-fcf38",-->
+<!--    storageBucket: "digitilez-fcf38.appspot.com",-->
+<!--    messagingSenderId: "829738626590",-->
+<!--    appId: "1:829738626590:web:dbd8e3ae8bb9d1d775480f",-->
+<!--    measurementId: "G-84C05QSDZB"-->
+<!--  };-->
+
+<!--  // Initialize Firebase-->
+<!--  const app = initializeApp(firebaseConfig);-->
+<!--  const analytics = getAnalytics(app);-->
+<!--</script>-->
+<!--  <script>-->
+<!--      // Initialize Firebase with your web app's Firebase configuration-->
+<!--      var firebaseConfig = {-->
+<!--        apiKey: "AIzaSyBBFgdmcpxy-E0Wb0aU2R6sj0yqKIoSls0",-->
+<!--            authDomain: "digitilez-fcf38.firebaseapp.com",-->
+<!--            projectId: "digitilez-fcf38",-->
+<!--            storageBucket: "digitilez-fcf38.appspot.com",-->
+<!--            messagingSenderId: "829738626590",-->
+<!--            appId: "1:829738626590:web:8b43974e82569f7d75480f",-->
+<!--            measurementId: "G-29V3DLZLJQ"-->
+<!--      };-->
+<!--      firebase.initializeApp(firebaseConfig);-->
+<!--    </script>-->
+
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '745276233992832',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v18.0'
+    });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <script src="main.dart.js?version=10.0" type="application/javascript"></script>
+</body>
+</html>
